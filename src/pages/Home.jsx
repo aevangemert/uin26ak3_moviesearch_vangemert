@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Movies from '../components/Movies'
 
+ //her skal james bond filmene vises
 
 export default function Home() {
 
@@ -44,7 +45,7 @@ export default function Home() {
             <form onSubmit={handleSubmit}>
                 <label>
                     Søk etter film
-                    <input type="search" placeholder="Harry Potter" onChange={handleChange}></input>
+                    <input type="search" placeholder="Back to the Future" onChange={handleChange}></input>
                 </label>
                 {/* ?? focused <History history={history} setSearch={setSearch}/> : null*/}
                 <button onClick={getMovies}>Søk</button>

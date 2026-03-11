@@ -5,8 +5,9 @@ export default function Movies({searchResult}) {
         <>
             <h1>Filmer</h1>
             <ul>
-                {/*liste ut james bond filmer? altså movies card componentet*/}
-                {searchResult?.map((searchR) => <li key={searchR.imbdID}><MovieCard Title={searchR.Title} Year={searchR.Year} Poster={searchR.Poster}/> </li>)}
+                {/*skal det være Link her? for at man kan trykke på en film? og bli sendt videre?*/}
+                {/*liste ut bare james bond filmer her?*/}
+                {searchResult?.map((searchR) => <li key={searchR.imdbID}><MovieCard imdbID={searchR.imdbID} Title={searchR.Title} Year={searchR.Year} Poster={searchR.Poster}/> </li>)}
             </ul>
 
         </>

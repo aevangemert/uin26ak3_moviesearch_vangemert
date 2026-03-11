@@ -12,7 +12,8 @@ function App() {
     <Layout>
       <Routes>
         <Route index element={<Home />} />
-        <Route path='/movies' element={<Movie />}/>
+        {/*dynamisk routing*/}
+        <Route path='/movies/:id' element={<Movie />}/>
       </Routes>
     </Layout>
 
