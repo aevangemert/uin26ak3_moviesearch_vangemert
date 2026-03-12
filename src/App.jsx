@@ -12,11 +12,11 @@ function App() {
 
     <Layout>
       <Routes>
-        {/*kan jeg bruke useState i Home ???*/}
-        <Route index element={<Home />} />
+        {/*bruke useState i Home ???*/}
+        <Route index element={<Home setSelectedMovie={setSelectedMovie} />} />
         {/*dynamisk routing*/}
         {/*må sende id med movie elementet, bruk riktig prop.. kan prøve sende med setselectedmovie?*/}
-        <Route path='/movies/:id' element={<Movie  />}/>
+        <Route path='/movies/:id' element={<Movie />}/>
       </Routes>
     </Layout>
 

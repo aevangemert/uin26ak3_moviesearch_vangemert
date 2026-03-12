@@ -1,6 +1,14 @@
 import { useState, useEffect } from 'react'
 import Movies from '../components/Movies'
 
+/*
+   TODO:
+   - vise data som hentes fra api 
+   - components, sende videre mtp hierarki
+   -> et komponent som håndterer visning av søkeresultater
+   -> et komponent som representerer én film i listevisning
+   */
+
 export default function Home() {
 
     const [search, setSearch] = useState("James Bond")
@@ -28,7 +36,7 @@ export default function Home() {
             console.error(err);
         }
     }
-  
+
     //useEffect som henter filmer etter brukeren har skrevet inn minst 3 bokstaver
     useEffect(() => {
         if (search.length >= 3) {
@@ -56,14 +64,6 @@ export default function Home() {
                 </label>
                 {/* <button onClick={getMovies}>Søk</button> */}
             </form>
-            {/*
-        TODO:
-        - vise data som hentes fra api 
-        - components, sende videre mtp hierarki
-        -> et komponent som håndterer visning av søkeresultater
-        -> et komponent som representerer én film i listevisning
-        */}
-
             {/*her kommer movies componenten som har moviecard componenten*/}
             <section>
                 <Movies searchResult={searchResult} />
