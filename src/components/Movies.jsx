@@ -3,12 +3,10 @@ import MovieCard from "./MovieCard"
 export default function Movies({searchResult, setSelectedMovie}) {
     return (
         <>
-            <h1>Filmer</h1>
-            <ul>
-                {/*skal det være Link her? for at man kan trykke på en film? og bli sendt videre?*/}
-                {/*liste ut bare james bond filmer her?*/}
-                {searchResult?.map((searchR) => <li key={searchR.imdbID}><MovieCard imdbID={searchR.imdbID}
-                Title={searchR.Title} Year={searchR.Year} Poster={searchR.Poster} setSelectedMovie={setSelectedMovie}/> </li>)}
+            <h2>Movies</h2>
+            <ul className="listed-movies">
+                {searchResult?.map((searchR) => ( <li key={searchR.imdbID}><MovieCard imdbID={searchR.imdbID}
+                Title={searchR.Title} Year={searchR.Year} Poster={searchR.Poster} Type={searchR.Type} setSelectedMovie={setSelectedMovie}/> </li>))}
             </ul>
 
         </>

@@ -6,18 +6,18 @@ import Home from './pages/Home'
 import Movie from './pages/Movie'
 
 function App() {
-
+  
   const [selectedMovie, setSelectedMovie] = useState()
 
   return (
 
     <Layout>
       <Routes>
-        {/*bruke useState i Home ???*/}
+        {/*sender med setSelectedMovie til home*/}
         <Route index element={<Home setSelectedMovie={setSelectedMovie} />} />
         {/*dynamisk routing*/}
-        {/*må sende id med movie elementet, bruk riktig prop.. kan prøve sende med setselectedmovie?*/}
-        <Route path='/movies/:id' element={<Movie selectedMovie={selectedMovie}/>}/>
+        {/*sender med selectedMovie til Movie*/}
+        <Route path='/:movies/:title' element={<Movie selectedMovie={selectedMovie} />} />
       </Routes>
     </Layout>
 

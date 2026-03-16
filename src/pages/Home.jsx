@@ -15,7 +15,7 @@ export default function Home({setSelectedMovie}) {
     const [search, setSearch] = useState("James Bond")
     const [searchResult, setSearchResult] = useState([])
 
-    // const baseUrl = `http://www.omdbapi.com/?s=${search}&apikey=`
+    //const baseUrl = `http://www.omdbapi.com/?s=${search}&apikey=`
 
     //api-nøkkelen, nøkkel ligger i egen .env fil og lagt til i gitignore for at den ikke skal pushes til github
     const apiKey = import.meta.env.VITE_APP_API_KEY
@@ -57,10 +57,10 @@ export default function Home({setSelectedMovie}) {
 
     return (
         <main>
-            <h1>Forside</h1>
+            <h1>Main Page</h1>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Søk etter film
+                    Search for movie
                     <input type="search" placeholder="James Bond.." value={search} onChange={handleChange}></input>
                 </label>
                 {/* <button onClick={getMovies}>Søk</button> */}

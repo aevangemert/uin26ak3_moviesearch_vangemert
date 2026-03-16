@@ -1,3 +1,11 @@
+# Bruk av KI
+Jeg har kommentert direkte i koden hva jeg fikk hjelp til av KI
+Legger også ved lenke her.
+https://chatgpt.com/share/69b6a048-c398-8003-95e1-33ab45c91566 
+
+# Styling
+Har innstallert og brukt sass, ble ikke den fineste filmsiden, men prøvde meg litt frem ialf.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
